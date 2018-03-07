@@ -1,0 +1,26 @@
+<script>
+
+    function diviscibleBy3 (number) {
+        return number % 3 == 0;
+    }
+
+    function diviscibleBy5 (number) {
+        return number % 5 == 0;
+    }
+
+    function diviscibleByBoth (number) {
+        return ((number % 5 == 0)&&(number % 3 === 0));
+    }
+
+    for (var currentNumber = 1;currentNumber <101;currentNumber++){
+        if (diviscibleByBoth(currentNumber)){
+            console.log(currentNumber+" - FizzBuzz");
+        }
+        else if (diviscibleBy3(currentNumber)){
+            console.log (currentNumber+" - Fizz");
+        }
+        else if (diviscibleBy5(currentNumber)){
+            console.log(currentNumber+" - Buzz");
+        }
+    }
+</script>

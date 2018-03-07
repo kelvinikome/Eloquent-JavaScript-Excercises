@@ -1,0 +1,20 @@
+<script>
+    var gridSize = 8;
+    var show = false;
+    var gridLine = "";
+
+    for (var y = 0;y<=gridSize;y++){
+        for (var x =0;x<=gridSize;x++){
+            if (show){
+                gridLine += "#";
+                show = false;
+            }
+            else {
+                gridLine += " ";
+                show = true;
+            }
+        }
+        console.log(gridLine);
+        gridLine = "";
+    }
+</script>
